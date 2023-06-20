@@ -1,0 +1,5 @@
+1. Universitas Surabaya	0001
+2. Bon Cafe GM 3	0002
+3. Galaxy Mall 3	0003
+4. Tunjungan Plaza	0004
+5. Pakuwon Mall		0005

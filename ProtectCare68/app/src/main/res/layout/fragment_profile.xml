@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Profile"
+            android:textAppearance="@style/Header1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNameProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Name: "
+            android:textAppearance="@style/Body"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/txtVaccinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of vaccination dosses:"
+            android:textAppearance="@style/Body"
+            app:layout_constraintStart_toStartOf="@+id/txtNameProfile"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameProfile" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_exit_to_app_24"
+            android:theme="@style/SubHeader"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The most visited place:"
+            android:textAppearance="@style/Body"
+            app:layout_constraintStart_toStartOf="@+id/txtVaccinate"
+            app:layout_constraintTop_toBottomOf="@+id/txtVaccinate" />
+
+        <ImageView
+            android:id="@+id/imageViewPlaceProfile"
+            android:layout_width="0dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtTimes"
+            app:layout_constraintTop_toBottomOf="@+id/txtMostVisited"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/txtMostVisited"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center|center_vertical"
+            android:text="Name of Place"
+            android:textAppearance="@style/SubHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtTimes"
+            app:layout_constraintTop_toBottomOf="@+id/txtTimes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
